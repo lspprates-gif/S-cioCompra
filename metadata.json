@@ -1,0 +1,6 @@
+{
+  "name": "Futebol de Várzea",
+  "description": "Marketplace local gamificado com energia de futebol de várzea e integração real com o Supabase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

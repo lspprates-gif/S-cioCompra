@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom glow utility templates */
+.orange-glow {
+  box-shadow: 0 0 20px rgba(255, 85, 0, 0.4);
+}
+
+.yellow-glow {
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+}
+
+.text-orange-glow {
+  text-shadow: 0 0 10px rgba(255, 85, 0, 0.6);
+}
+
+.text-yellow-glow {
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+}
+
+/* Glassmorphism panel base styling */
+.glass-panel {
+  background: rgba(14, 14, 16, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 85, 0, 0.15);
+}
+
+.glass-panel-yellow {
+  background: rgba(14, 14, 16, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.15);
+}
+
+/* Hide scrollbars for aesthetic horizontal slide categories */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Beautiful custom range slider track glow */
+input[type="range"] {
+  accent-color: #FF5500;
+}
+
+/* Animated stadium crowd sound wave bar simulator */
+@keyframes bounce-bar {
+  0%, 100% { height: 4px; }
+  50% { height: 28px; }
+}
+
+.animate-music-bar-1 { animation: bounce-bar 0.6s ease-in-out infinite alternate; }
+.animate-music-bar-2 { animation: bounce-bar 0.8s ease-in-out infinite alternate; animation-delay: 0.15s; }
+.animate-music-bar-3 { animation: bounce-bar 0.5s ease-in-out infinite alternate; animation-delay: 0.3s; }
+.animate-music-bar-4 { animation: bounce-bar 0.7s ease-in-out infinite alternate; animation-delay: 0.45s; }
+.animate-music-bar-5 { animation: bounce-bar 0.9s ease-in-out infinite alternate; animation-delay: 0.1s; }
+
+/* Custom glowing borders and shadows */
+@keyframes neon-pulse {
+  0%, 100% { border-color: rgba(255, 85, 0, 0.4); box-shadow: 0 0 5px rgba(255, 85, 0, 0.2); }
+  50% { border-color: rgba(255, 85, 0, 0.9); box-shadow: 0 0 15px rgba(255, 85, 0, 0.5); }
+}
+
+.pulse-neon-border {
+  animation: neon-pulse 2s infinite ease-in-out;
+}
